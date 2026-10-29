@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project6</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="image">
+        <h1>HTML/CSS Quiz</h1>
+        <nav id="head">
+            <ul>
+                <li><a href="#info">INFO</a></li>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="info" id="info">
+            <h2>Student Info</h2>
+            <hr>authorization
+            <form id="">
+                <div><label for="name">Name</label>
+                <input type="text" name="name" required id="name" placeholder="name"></div>
+                <div><label for="mail">Email</label>
+                <input type="email" id="mail" required placeholder="email"></div>
+                <div><label for="birth">birth</label>
+                <input type="date" id="birth" required></div>
+            </form>
+        </div>
+        <div class="html" id="html">
+            <div class="quest">
+                <h2>Question1</h2>
+                <p>The legend element represents a caption for the content of its parent fieldset element</p>
+                <form id="bol1">
+                    <input type="radio" id="true-answer" name="quiz-question-1" value="true">
+                    <label for="true-answer">True</label>
+                    <br>
+                    <input type="radio" id="false-answer" name="quiz-question-1" value="false">
+                    <label for="false-answer">False</label>
+                </form>
+            </div>
+            <div class="quest">
+                <h2>Question2</h2>
+                <p>A label element nesting an input element is required to have a for attribute with the same value as the input's id</p>
+                <form id="bol1">
+                    <input type="radio" id="true-answer" name="quiz-question-1" value="true">
+                    <label for="true-answer">True</label>
+                    <br>
+                    <input type="radio" id="false-answer" name="quiz-question-1" value="false">
+                    <label for="false-answer">False</label>
+                </form>
+            </div>
+        </div>
+        <div class="css" id="css">
+            <h2>CSS</h2>
+            <hr>
+            <label for="css-options">Can the CSS margin property accept negative values?</label><br>
+
+            <select id="css-options" name="css-question">
+                <option value="" disabled selected>Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select><br>
+
+            <label for="rexta">Do you have any questions:</label><br>
+            <textarea name="texta" id="texta" rows="4" cols="30" max=100></textarea>
+            <button type="submit" id="send">Send</button>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://freecodecamp.org/">freeCodeCamp</a>
+                </li>
+                <li>San Francisco</li>
+                <li>California</li>
+                <li>USA</li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
